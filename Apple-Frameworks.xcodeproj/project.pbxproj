@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0A3E84EE261B78920056102D /* Apple_FrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E84ED261B78920056102D /* Apple_FrameworksApp.swift */; };
-		0A3E84F0261B78920056102D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E84EF261B78920056102D /* ContentView.swift */; };
 		0A3E84F2261B78940056102D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3E84F1261B78940056102D /* Assets.xcassets */; };
 		0A3E84F5261B78940056102D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3E84F4261B78940056102D /* Preview Assets.xcassets */; };
+		0A3E84FE261B79120056102D /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E84FD261B79120056102D /* Framework.swift */; };
+		0A3E8502261B955B0056102D /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E8501261B955B0056102D /* FrameworkGridView.swift */; };
+		0A3E8506261BA0D60056102D /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E8505261BA0D60056102D /* FrameworkDetailView.swift */; };
+		0A3E8509261BA49D0056102D /* DetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E8508261BA49D0056102D /* DetailButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A3E84EA261B78920056102D /* Apple-Frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-Frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3E84ED261B78920056102D /* Apple_FrameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_FrameworksApp.swift; sourceTree = "<group>"; };
-		0A3E84EF261B78920056102D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A3E84F1261B78940056102D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A3E84F4261B78940056102D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A3E84F6261B78940056102D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A3E84FD261B79120056102D /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		0A3E8501261B955B0056102D /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		0A3E8505261BA0D60056102D /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		0A3E8508261BA49D0056102D /* DetailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				0A3E84ED261B78920056102D /* Apple_FrameworksApp.swift */,
-				0A3E84EF261B78920056102D /* ContentView.swift */,
 				0A3E84F1261B78940056102D /* Assets.xcassets */,
+				0A3E8501261B955B0056102D /* FrameworkGridView.swift */,
+				0A3E8508261BA49D0056102D /* DetailButton.swift */,
 				0A3E84F6261B78940056102D /* Info.plist */,
 				0A3E84F3261B78940056102D /* Preview Content */,
+				0A3E84FD261B79120056102D /* Framework.swift */,
+				0A3E8505261BA0D60056102D /* FrameworkDetailView.swift */,
 			);
 			path = "Apple-Frameworks";
 			sourceTree = "<group>";
@@ -138,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3E84F0261B78920056102D /* ContentView.swift in Sources */,
+				0A3E8506261BA0D60056102D /* FrameworkDetailView.swift in Sources */,
+				0A3E8502261B955B0056102D /* FrameworkGridView.swift in Sources */,
+				0A3E84FE261B79120056102D /* Framework.swift in Sources */,
+				0A3E8509261BA49D0056102D /* DetailButton.swift in Sources */,
 				0A3E84EE261B78920056102D /* Apple_FrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

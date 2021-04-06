@@ -9,10 +9,11 @@ import SwiftUI
 
 struct DetailButton: View {
     var title: String
+    @Binding var isShowingSafariView: Bool
     
     var body: some View {
         Button(action: {
-            
+            isShowingSafariView = true
         }, label: {
             Text(title)
                 .font(.title2)

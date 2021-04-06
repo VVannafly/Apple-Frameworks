@@ -11,7 +11,8 @@ struct FrameworkDetailView: View {
     
     let framework: Framework
     @Binding var isShowingDetailView: Bool
-   
+    
+    
     var body: some View {
         DetailedFrameworkView(framework: framework, isShowingDetailView: $isShowingDetailView)
     }
@@ -22,6 +23,7 @@ struct DetailedFrameworkView: View {
     
     let framework: Framework
     @Binding var isShowingDetailView: Bool
+    @State private var isShowingSafariView = false
     
     var body: some View {
         
@@ -44,8 +46,11 @@ struct DetailedFrameworkView: View {
                 .fontWeight(.semibold)
                 .padding()
             Spacer()
-            DetailButton(title: "Learn More")
+            DetailButton(title: "Learn More", isShowingSafariView: $isShowingSafariView)
         }
+        .fullScreenCover(isPresented: $isShowingSafariView, content: {
+            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.google.com")!)
+        })
         .padding()
     }
 }

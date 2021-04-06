@@ -12,7 +12,6 @@ struct FrameworkDetailView: View {
     let framework: Framework
     @Binding var isShowingDetailView: Bool
     
-    
     var body: some View {
         DetailedFrameworkView(framework: framework, isShowingDetailView: $isShowingDetailView)
     }
@@ -26,20 +25,11 @@ struct DetailedFrameworkView: View {
     @State private var isShowingSafariView = false
     
     var body: some View {
-        
         VStack(spacing: 10) {
-            HStack {
-                Spacer()
-                Button {
-                    isShowingDetailView = false
-                } label: {
-                    Image(systemName: "xmark")
-                        .foregroundColor(Color(.label))
-                        .imageScale(.large)
-                        .frame(width: 44, height: 44)
-                }
-            }
+            DismissButton(isShowingDetailView: $isShowingDetailView)
+            
             Spacer()
+            
             FrameworkTitleView(framework: framework)
             Text(framework.description)
                 .font(.body)

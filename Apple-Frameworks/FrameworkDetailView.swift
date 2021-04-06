@@ -8,36 +8,34 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
+    
+    let framework: Framework
+    @Binding var isShowingDetailView: Bool
+   
     var body: some View {
-        
-        DetailedFrameworkView(framework: MockData.frameworks[0])
+        DetailedFrameworkView(framework: framework, isShowingDetailView: $isShowingDetailView)
     }
 }
 
-struct FrameworkDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        FrameworkDetailView()
-            .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
-    }
-}
 
 struct DetailedFrameworkView: View {
     
     let framework: Framework
+    @Binding var isShowingDetailView: Bool
     
     var body: some View {
         
         VStack(spacing: 10) {
             HStack {
                 Spacer()
-                Button(action: {
-                    
-                }, label: {
+                Button {
+                    isShowingDetailView = false
+                } label: {
                     Image(systemName: "xmark")
                         .foregroundColor(Color(.label))
                         .imageScale(.large)
                         .frame(width: 44, height: 44)
-                })
+                }
             }
             Spacer()
             FrameworkTitleView(framework: framework)

@@ -14,6 +14,8 @@
 		0A3E8502261B955B0056102D /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E8501261B955B0056102D /* FrameworkGridView.swift */; };
 		0A3E8506261BA0D60056102D /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E8505261BA0D60056102D /* FrameworkDetailView.swift */; };
 		0A3E8509261BA49D0056102D /* DetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E8508261BA49D0056102D /* DetailButton.swift */; };
+		0A3E850C261C321F0056102D /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E850B261C321F0056102D /* FrameworkGridViewModel.swift */; };
+		0A3E8510261CE3470056102D /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E850F261CE3470056102D /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		0A3E8501261B955B0056102D /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		0A3E8505261BA0D60056102D /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		0A3E8508261BA49D0056102D /* DetailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailButton.swift; sourceTree = "<group>"; };
+		0A3E850B261C321F0056102D /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		0A3E850F261CE3470056102D /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				0A3E84F3261B78940056102D /* Preview Content */,
 				0A3E84FD261B79120056102D /* Framework.swift */,
 				0A3E8505261BA0D60056102D /* FrameworkDetailView.swift */,
+				0A3E850B261C321F0056102D /* FrameworkGridViewModel.swift */,
+				0A3E850F261CE3470056102D /* SafariView.swift */,
 			);
 			path = "Apple-Frameworks";
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 				0A3E84FE261B79120056102D /* Framework.swift in Sources */,
 				0A3E8509261BA49D0056102D /* DetailButton.swift in Sources */,
 				0A3E84EE261B78920056102D /* Apple_FrameworksApp.swift in Sources */,
+				0A3E850C261C321F0056102D /* FrameworkGridViewModel.swift in Sources */,
+				0A3E8510261CE3470056102D /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

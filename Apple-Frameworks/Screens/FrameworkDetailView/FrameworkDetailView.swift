@@ -9,38 +9,40 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     
-    let framework: Framework
-    @Binding var isShowingDetailView: Bool
+    @ObservedObject var viewModel: FrameworkDetailViewModel
     
     var body: some View {
-        DetailedFrameworkView(framework: framework, isShowingDetailView: $isShowingDetailView)
+        DetailedFrameworkView(viewModel: viewModel)
     }
 }
 
 
 struct DetailedFrameworkView: View {
     
-    let framework: Framework
-    @Binding var isShowingDetailView: Bool
-    @State private var isShowingSafariView = false
+    @ObservedObject var viewModel: FrameworkDetailViewModel
     
     var body: some View {
         VStack(spacing: 10) {
-            DismissButton(isShowingDetailView: $isShowingDetailView)
+            DismissButton(isShowingDetailView: $viewModel.isShowingDetailView.wrappedValue)
             
             Spacer()
             
-            FrameworkTitleView(framework: framework)
-            Text(framework.description)
+            FrameworkTitleView(framework: viewModel.framework)
+            Text(viewModel.framework.description)
                 .font(.body)
                 .fontWeight(.semibold)
                 .padding()
             Spacer()
-            DetailButton(title: "Learn More", isShowingSafariView: $isShowingSafariView)
+            Link(destination: (URL(string: viewModel.framework.urlString) ?? URL(string: "www.google.com"))!, label: {
+                Text("Learn More")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .frame(width: 280, height: 50, alignment: .center)
+                    .background(Color.red)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            })
         }
-        .fullScreenCover(isPresented: $isShowingSafariView, content: {
-            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.google.com")!)
-        })
         .padding()
     }
 }

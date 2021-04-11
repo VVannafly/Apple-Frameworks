@@ -18,6 +18,7 @@
 		0A3E8510261CE3470056102D /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E850F261CE3470056102D /* SafariView.swift */; };
 		0A3E8514261CE9C60056102D /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E8513261CE9C60056102D /* FrameworkTitleView.swift */; };
 		0A3E8518261CEA260056102D /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E8517261CEA260056102D /* DismissButton.swift */; };
+		0A3E85C326236BDE0056102D /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E85C226236BDE0056102D /* FrameworkDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		0A3E850F261CE3470056102D /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		0A3E8513261CE9C60056102D /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
 		0A3E8517261CEA260056102D /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
+		0A3E85C226236BDE0056102D /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				0A3E8505261BA0D60056102D /* FrameworkDetailView.swift */,
+				0A3E85C226236BDE0056102D /* FrameworkDetailViewModel.swift */,
 			);
 			path = FrameworkDetailView;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3E85C326236BDE0056102D /* FrameworkDetailViewModel.swift in Sources */,
 				0A3E8506261BA0D60056102D /* FrameworkDetailView.swift in Sources */,
 				0A3E8502261B955B0056102D /* FrameworkGridView.swift in Sources */,
 				0A3E84FE261B79120056102D /* Framework.swift in Sources */,
